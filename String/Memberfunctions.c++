@@ -1,7 +1,4 @@
-/*  append assign at back begin front end cleat empty find replace insert*/
-/* ctype
-    isdigit islower isupper toupper isalpha ispunct isspace  isalnum
-*/
+
 #include<iostream>
 #include<string>
 using namespace std;
@@ -41,3 +38,7 @@ int main()
 
     return 0;
     }
+/*  append assign at back begin front end cleat empty find replace insert*/
+/* ctype
+    isdigit islower isupper toupper isalpha ispunct isspace  isalnum
+*/

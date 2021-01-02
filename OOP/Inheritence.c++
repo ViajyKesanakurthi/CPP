@@ -13,9 +13,7 @@ class Base
     int a;
     string b;
     public:
-    Base(){  
-        a=10;
-        b="Base";
+    Base() :a(10) , b("base") {
     }
 virtual void print()
     {

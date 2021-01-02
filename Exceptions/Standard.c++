@@ -1,22 +1,23 @@
 #include<iostream>
 #include<exception>
+#include<typeinfo>
+#include<new>
 using namespace std;
 
-class Err {
-public:
-    Err() {
-        string * a = new string[9999999];
-        delete a;
-        }
-    };
 
+class A { A() {} };
 int main() {
     try {
-        Err a;
+        int* a = new int[-9];
+        A* b = 0;
+        cout << typeid(*b).name();
      }
-    catch (bad_alloc & e)
+    catch (bad_array_new_length& e) {
+        cerr << e.what();
+        }
+    catch (bad_typeid& e)
     {
-        cout << e.what()<<"ASDf";
+        cerr << e.what() << "exception";
     }
     }
 
