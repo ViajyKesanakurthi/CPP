@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "*.js": "javascript",
-        "*.cpp": "c++",
-        "iostream": "cpp",
-        "exception": "cpp",
-        "typeinfo": "cpp"
-    }
-}
